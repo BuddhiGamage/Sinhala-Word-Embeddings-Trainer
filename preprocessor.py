@@ -60,4 +60,3 @@ class PreProcessor:
         for preprocess_fn, repl in self._preprocess:
             input_text = preprocess_fn(input_text,repl)
         return input_text
-
