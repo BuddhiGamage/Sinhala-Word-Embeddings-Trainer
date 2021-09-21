@@ -61,9 +61,3 @@ class PreProcessor:
             input_text = preprocess_fn(input_text,repl)
         return input_text
 
-
-if __name__ == "__main__":
-    P = PreProcessor(url_repl='[URL]', email_repl='[EMAIL]', phone_repl='[TEL]',date_repl='[DATE]',num_repl ='[NUM]', emoji_repl='[EMOJI]')
-    example ="කොළඹ ගිය පියල් ඇතැම් විට ගමට එන්නේ සතියකට වරකි 091 2235495. ashmari@gmail.com, https://github.com/  2021.02.12 00254 😀 2021-02-23 12.01.1996  <ගමට එන්නේ?>"
-    out = P.preprocess(example)
-    print(out)
